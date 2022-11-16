@@ -50,10 +50,10 @@
                 {% for log in log_info %}
                 <article class="log-article">
                     <div class="log-title">
-                        <a class="title-thread" href="#">{{ log[0] | truncate(30, true) }}<time class="date-time" datetime="{{ log[1] }}">● {{ log[1] }}</time></a>
+                        <a class="title-thread" href="#">{{ log["log_entry"] | truncate(30, true) }}<time class="date-time" datetime="{{ log['log_date'] }}">● {{ log["log_date"] }}</time></a>
                     </div>
                     <div class="log-desc">
-                        <p>{{ log[0] }} </p>
+                        <p>{{ log["log_entry"] }} </p>
                         
                     </div>
                 </article>
