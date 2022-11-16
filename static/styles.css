@@ -6,6 +6,7 @@ html {
 body {
     margin: 0;
     background-color: #fdf8e8;
+    min-height: 100vh;
 }
 
 .main-content {
