@@ -29,7 +29,7 @@
         <section>
             <div class="log-box">
                 <!-- Text form for logging and button for submitting -->
-                <form action="/entry" method="POST">
+                <form method="POST">
                     <div class="text-box">
                         <h3>Add a new log</3>
                         <!-- <label for="log-field">Log: </label> -->
@@ -47,15 +47,17 @@
         <section>
             <div class="log-list">
                 <!-- here we will display the logs -->
-                <article>
+                {% for log in log_info %}
+                <article class="log-article">
                     <div class="log-title">
-                        <h2>This is a post title/log title ● <time datetime="11/15/2022">11/15/2022</time></h2>
+                        <a class="title-thread" href="#">{{ log[0] | truncate(30, true) }}<time class="date-time" datetime="{{ log[1] }}">● {{ log[1] }}</time></a>
                     </div>
                     <div class="log-desc">
-                        <p>Short description of the log</p>
-                        <p>10 -> Number of threads</p>
+                        <p>{{ log[0] }} </p>
+                        
                     </div>
                 </article>
+                {% endfor %}
             </div>
         </section>
     </main>

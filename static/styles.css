@@ -1,5 +1,6 @@
 html {
     font-family: Lato, sans-serif;
+    color: #393E46;
 }
 
 
@@ -74,6 +75,28 @@ body {
     margin: 3rem auto;
 }
 
+.date-time {
+    color: #6B728E;
+}
+
+.log-article {
+    margin: 2.5rem auto;
+}
+
+.log-title {
+    margin: 1rem 0 4rem;
+    font-size: 1.7rem;
+}
+
+.title-thread {
+    font-weight: bolder;
+    color: #393E46;
+    padding-top: 2rem;
+}
+
+.thread-title:visited {
+    color: #393E46;
+}
 
 .footer-bar {
     width: 100%;
